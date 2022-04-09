@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Oswald:wght@300;500;700&display=swap');
+
+:root {
+    --color-primary: rgb(240, 217, 151);
+    --color-secondary: rgb(201, 110, 103);
+    --color-accent: rgb(94, 70, 70);
+    --color-additional: rgb(190, 232, 218);
+
+    --font-oswald: 'Oswald', sans-serif;
+    --font-lobster: 'Lobster Two', cursive;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: var(--font-oswald);
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+   font-family: 'Lobster Two', cursive;
+}
+
+h1{
+    font-size: 5rem;
+}
