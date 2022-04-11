@@ -1,12 +1,12 @@
 <template>
-    <NavBar />
-    <Hero />
+    <!-- <NavBar /> -->
+    <Headline />
 </template>
 
 <script setup>
 // IMPORTS
 import NavBar from "./components/NavBar.vue";
-import Hero from "./components/Hero.vue";
+import Headline from "./components/Headline.vue";
 </script>
 
 

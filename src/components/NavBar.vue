@@ -81,17 +81,18 @@ export default {
 
 <style>
 .nav-container {
+    width: 100%;
     height: 7rem;
-
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 
     box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.5);
+    background-color: var(--color-additional);
 
     padding: 0.5em 2em;
-    position: relative;
-    background-color: var(--color-additional);
+    position: fixed;
 }
 
 .logo {
