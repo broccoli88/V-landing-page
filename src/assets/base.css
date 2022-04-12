@@ -44,6 +44,7 @@ h1{
     line-height: 1.1;
     letter-spacing: 0.5px;
     /* margin-bottom: 3rem; */
+    z-index: 1;
 }
 
 h2 {

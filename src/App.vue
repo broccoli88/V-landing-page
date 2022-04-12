@@ -1,12 +1,18 @@
 <template>
     <!-- <NavBar /> -->
     <Headline />
+    <SubHeadline />
 </template>
 
-<script setup>
+<script>
 // IMPORTS
 import NavBar from "./components/NavBar.vue";
 import Headline from "./components/Headline.vue";
+import SubHeadline from "./components/SubHeadline.vue";
+
+export default {
+    components: { NavBar, Headline, SubHeadline },
+};
 </script>
 
 
