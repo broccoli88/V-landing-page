@@ -9,7 +9,7 @@
                 asperiores ut error, vitae nesciunt odio temporibus quisquam
                 itaque deleniti sequi animi?
             </p>
-            <Button class="button--style-headline">Roll in</Button>
+            <Button class="btn--style-headline"> Roll in </Button>
         </div>
     </div>
 </template>

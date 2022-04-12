@@ -1,13 +1,16 @@
 <template>
     <!-- <NavBar /> -->
     <Headline />
-    <SubHeadline />
+    <main>
+        <SubHeadline />
+    </main>
 </template>
 
 <script>
 // IMPORTS
 import NavBar from "./components/NavBar.vue";
 import Headline from "./components/Headline.vue";
+
 import SubHeadline from "./components/SubHeadline.vue";
 
 export default {

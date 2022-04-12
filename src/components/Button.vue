@@ -26,7 +26,7 @@
     cursor: pointer;
 }
 
-.button--style-headline {
+.btn--style-headline {
     background-color: var(--color-additional);
     border: 2px solid var(--color-additional);
     color: var(--color-accent);
