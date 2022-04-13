@@ -71,8 +71,6 @@ export default {
 .btn--style-sub-headline {
     background-color: white;
     color: var(--color-accent);
-
-    margin-bottom: 6rem;
 }
 
 .img-container {

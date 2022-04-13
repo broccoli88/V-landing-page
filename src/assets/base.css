@@ -1,62 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Oswald:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Oswald:wght@300;500;700&display=swap");
 
 :root {
-    --color-primary: rgb(240, 217, 151);
-    --color-secondary: rgb(201, 110, 103);
-    --color-accent: rgb(94, 70, 70);
-    --color-additional: rgb(190, 232, 218);
-    --color-font: hsl(0, 0%, 20%);
+  --color-primary: rgb(240, 217, 151);
+  --color-secondary: rgb(201, 110, 103);
+  --color-accent: rgb(94, 70, 70);
+  --color-additional: rgb(190, 232, 218);
+  --color-font: hsl(0, 0%, 20%);
 
-    --font-oswald: 'Oswald', sans-serif;
-    --font-lobster: 'Lobster Two', cursive;
+  --font-oswald: "Oswald", sans-serif;
+  --font-lobster: "Lobster Two", cursive;
 
-    --padding-inline: clamp(2rem, 10vw, 25rem);
-
+  --padding-inline: clamp(2rem, 10vw, 25rem);
 }
 
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: clamp(1.5rem, 1.8vw, 2rem);
-    font-family: var(--font-oswald);
-    line-height: 1.5;
-    letter-spacing: 1.2px;
-    color: var(--color-font);
-    overflow-x: hidden;
+  width: 100vw;
+
+  font-size: clamp(1.5rem, 1.8vw, 2rem);
+  font-family: var(--font-oswald);
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  color: var(--color-font);
+  overflow-x: hidden;
 }
 
-h1,  h3 {
-   font-family: 'Lobster Two', cursive;
+h1,
+h3 {
+  font-family: "Lobster Two", cursive;
 }
 
-
-
-h1{
-    color: var(--color-accent);
-    font-size: clamp(7rem, 10vw, 12rem);
-    margin: 0;
-    line-height: 1.1;
-    letter-spacing: 0.5px;
-    /* margin-bottom: 3rem; */
-    z-index: 1;
+h1 {
+  color: var(--color-accent);
+  font-size: clamp(7rem, 10vw, 12rem);
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  /* margin-bottom: 3rem; */
+  z-index: 1;
 }
 
 h2 {
-    font-family: var(--font-oswald);
-    font-size: clamp(2rem, 2.4vw, 3rem);
-    letter-spacing: 0.5px;
+  font-family: var(--font-oswald);
+  font-size: clamp(2rem, 2.4vw, 3rem);
+  letter-spacing: 0.5px;
 }
 
 h3 {
-    font-size: clamp(1.8rem, 2vw, 3rem);
+  font-size: clamp(1.8rem, 2vw, 3rem);
 }
-

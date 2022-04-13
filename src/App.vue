@@ -2,6 +2,7 @@
     <!-- <NavBar /> -->
     <Headline />
     <main>
+        <Offers />
         <SubHeadline />
     </main>
 </template>
@@ -10,11 +11,11 @@
 // IMPORTS
 import NavBar from "./components/NavBar.vue";
 import Headline from "./components/Headline.vue";
-
+import Offers from "./components/Offers.vue";
 import SubHeadline from "./components/SubHeadline.vue";
 
 export default {
-    components: { NavBar, Headline, SubHeadline },
+    components: { NavBar, Headline, SubHeadline, Offers },
 };
 </script>
 

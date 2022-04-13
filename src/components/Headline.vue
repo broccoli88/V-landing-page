@@ -98,6 +98,8 @@ export default {
         position: absolute;
         top: -5%;
         left: -5%;
+
+        pointer-events: none;
     }
 }
 </style>
