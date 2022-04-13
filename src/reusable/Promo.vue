@@ -14,8 +14,9 @@ export default {
 
 <style>
 .promo-card {
-    width: 100%;
+    width: min(100%, 400px);
     padding: 2rem;
+    margin-inline: auto;
     font-size: clamp(1.2rem, 1.5vw, 1.7rem);
 
     border: 1px solid var(--color-secondary);
@@ -55,10 +56,9 @@ export default {
     background-color: transparent;
 }
 
-.promo-img {
-    width: 100%;
-    height: 10rem;
-    background-image: url("../assets/Arizona1.jpg");
-    background-size: cover;
+@media (min-width: 900px) {
+    .promo-card {
+        margin: 0;
+    }
 }
 </style>

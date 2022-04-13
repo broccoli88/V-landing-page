@@ -1,6 +1,8 @@
 <template>
     <div class="offers">
         <Icon
+            v-if="!allPromos"
+            @click="slideRight"
             class="slide right"
             icon="bi:chevron-double-left"
             color="black"
@@ -9,8 +11,17 @@
             :rotate="2"
             :inline="true"
         />
-        <CardOne />
+
+        <component v-if="!allPromos" :is="activeComponent"></component>
+        <div v-if="allPromos" class="promos">
+            <CardOne />
+            <CardThree class="best" />
+            <CardTwo />
+        </div>
+
         <Icon
+            v-if="!allPromos"
+            @click="slideLeft"
             class="slide left"
             icon="bi:chevron-double-left"
             color="black"
@@ -24,15 +35,64 @@
 
 <script>
 import CardOne from "./CardOne.vue";
+import CardThree from "./CardThree.vue";
+import CardTwo from "./CardTwo.vue";
+
 import { Icon } from "@iconify/vue";
 export default {
-    components: { CardOne, Icon },
+    components: { CardOne, CardTwo, CardThree, Icon },
+
+    data() {
+        return {
+            promoList: ["CardOne", "CardTwo", "CardThree"],
+            activeComponent: "CardThree",
+            allPromos: true,
+        };
+    },
+
+    mounted() {
+        window.addEventListener("resize", this.checkWidth);
+        this.checkWidth();
+    },
+
+    methods: {
+        slideRight() {
+            if (this.activeComponent === "CardOne") {
+                this.activeComponent = "CardTwo";
+            } else if (this.activeComponent === "CardTwo") {
+                this.activeComponent = "CardThree";
+            } else if (this.activeComponent === "CardThree") {
+                this.activeComponent = "CardOne";
+            }
+        },
+
+        slideLeft() {
+            if (this.activeComponent === "CardOne") {
+                this.activeComponent = "CardThree";
+            } else if (this.activeComponent === "CardThree") {
+                this.activeComponent = "CardTwo";
+            } else if (this.activeComponent === "CardTwo") {
+                this.activeComponent = "CardOne";
+            }
+        },
+
+        checkWidth() {
+            const width = window.innerWidth;
+
+            if (width >= 900) {
+                this.allPromos = true;
+            } else {
+                this.allPromos = false;
+            }
+        },
+    },
 };
 </script>
 
 <style>
 .offers {
-    padding: var(--padding-inline);
+    padding-inline: var(--padding-inline);
+    padding-block: 8rem;
     width: 100%;
     position: relative;
 }
@@ -52,5 +112,21 @@ export default {
 
 .right {
     right: 1rem;
+}
+
+@media (min-width: 900px) {
+    .promos {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .promos:nth-child(1) {
+        align-self: flex-end;
+    }
+
+    .best {
+        transform: scale(1.1);
+    }
 }
 </style>
