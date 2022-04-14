@@ -53,7 +53,7 @@ h1 {
 
 h2 {
   font-family: var(--font-oswald);
-  font-size: clamp(2rem, 2.4vw, 3rem);
+  font-size: clamp(3rem, 5vw, 6rem);
   letter-spacing: 0.5px;
 }
 

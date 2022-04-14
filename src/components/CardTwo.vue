@@ -1,7 +1,7 @@
 <template>
     <Promo>
         <h3 class="destination">Norway</h3>
-        <p class="promo-hook">- You must check Norway landscape! -</p>
+        <p class="promo-hook">You must check Norway landscape!</p>
         <p class="price">1500$</p>
         <div class="card2-img"></div>
         <p>

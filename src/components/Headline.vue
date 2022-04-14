@@ -53,10 +53,11 @@ export default {
 .cta > h2 {
     background-color: var(--color-additional);
     width: fit-content;
-    color: var(--color-secondary);
+    /* color: var(--color-secondary); */
     text-transform: uppercase;
     z-index: 0;
     padding: 0.2em;
+    font-size: clamp(2rem, 2.4vw, 3rem);
 }
 
 .cta > p {

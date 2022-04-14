@@ -57,6 +57,7 @@ export default {
     background-color: white;
     width: fit-content;
     color: var(--color-additional);
+    padding: 0 0.5em;
 }
 
 .sub__description > p {

@@ -2,7 +2,7 @@
     <Promo>
         <div class="best-price">Best Price</div>
         <h3 class="destination">Japan</h3>
-        <p class="promo-hook">- Something you have never seen -</p>
+        <p class="promo-hook">Something you have never seen</p>
         <p class="price">1200$</p>
         <div class="card3-img"></div>
         <p>

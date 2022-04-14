@@ -20,7 +20,7 @@ export default {
     font-size: clamp(1.2rem, 1.5vw, 1.7rem);
 
     border: 1px solid var(--color-secondary);
-    box-shadow: 0 0 3px hsl(0, 0%, 0%, 0.5);
+    box-shadow: 0 0 10px hsl(0, 0%, 40%, 0.5);
 
     display: flex;
     flex-direction: column;

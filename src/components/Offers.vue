@@ -1,5 +1,6 @@
 <template>
     <div class="offers">
+        <h2 class="header">Check our best offers!</h2>
         <Icon
             v-if="!allPromos"
             @click="slideRight"
@@ -95,6 +96,13 @@ export default {
     padding-block: 8rem;
     width: 100%;
     position: relative;
+}
+
+.header {
+    font-family: var(--font-lobster);
+    color: var(--color-accent);
+    text-align: center;
+    margin-bottom: 6rem;
 }
 
 .slide {
