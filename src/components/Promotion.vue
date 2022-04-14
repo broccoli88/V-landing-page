@@ -76,7 +76,7 @@ export default {
     }
 
     .promo-description {
-        width: min(90%, 25em);
+        width: min(90%, 30em);
     }
 
     .promo-description > p {

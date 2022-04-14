@@ -5,6 +5,7 @@
         <Offers />
         <SubHeadline />
         <Promotion />
+        <Connections />
     </main>
 </template>
 
@@ -15,9 +16,17 @@ import Headline from "./components/Headline.vue";
 import Offers from "./components/Offers.vue";
 import SubHeadline from "./components/SubHeadline.vue";
 import Promotion from "./components/Promotion.vue";
+import Connections from "./components/Connections.vue";
 
 export default {
-    components: { NavBar, Headline, SubHeadline, Offers, Promotion },
+    components: {
+        NavBar,
+        Headline,
+        SubHeadline,
+        Offers,
+        Promotion,
+        Connections,
+    },
 };
 </script>
 
