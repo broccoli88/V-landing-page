@@ -7,6 +7,9 @@
         <Promotion />
         <Connections />
     </main>
+    <footer>
+        <Footer />
+    </footer>
 </template>
 
 <script>
@@ -17,6 +20,7 @@ import Offers from "./components/Offers.vue";
 import SubHeadline from "./components/SubHeadline.vue";
 import Promotion from "./components/Promotion.vue";
 import Connections from "./components/Connections.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
     components: {
@@ -26,6 +30,7 @@ export default {
         Offers,
         Promotion,
         Connections,
+        Footer,
     },
 };
 </script>

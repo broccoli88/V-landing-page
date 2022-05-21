@@ -1,5 +1,8 @@
 <template>
     <div class="sub-headline">
+        <div class="img-container">
+            <img src="../assets/wallet.jpg" alt="" />
+        </div>
         <div class="sub__description">
             <h3>Comfortable and cheap flights</h3>
             <h2>Fly in an affordable way</h2>
@@ -9,9 +12,6 @@
                 voluptatem u
             </p>
             <Button class="btn--style-sub-headline"> Check </Button>
-        </div>
-        <div class="img-container">
-            <img src="../assets/wallet.jpg" alt="" />
         </div>
     </div>
 </template>
@@ -29,9 +29,27 @@ export default {
     width: 100%;
     background-color: var(--color-additional);
     padding-inline: var(--padding-inline);
-    padding-block: 15%;
+    padding-block: 30% 40%;
 
     display: flex;
+
+    position: relative;
+}
+
+.sub-headline::before {
+    content: "";
+    display: inline-block;
+
+    background-color: var(--color-additional);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    top: -15rem;
+    left: 0;
+
+    z-index: -10;
 }
 
 .sub__description {
@@ -85,7 +103,7 @@ export default {
 @media (min-width: 768px) {
     .sub-headline {
         align-items: center;
-        gap: 4rem;
+        gap: 8rem;
         justify-content: center;
         padding-block: 10%;
     }

@@ -6,6 +6,7 @@
   --color-accent: rgb(94, 70, 70);
   --color-additional: rgb(190, 232, 218);
   --color-font: hsl(0, 0%, 20%);
+  --color-bg: hsl(0, 0%, 97%);
 
   --font-oswald: "Oswald", sans-serif;
   --font-lobster: "Lobster Two", cursive;
@@ -34,6 +35,8 @@ body {
   letter-spacing: 1.2px;
   color: var(--color-font);
   overflow-x: hidden;
+
+  background-color: var(--color-bg);
 }
 
 h1,

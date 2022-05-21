@@ -10,7 +10,7 @@
             <Button class="newsletter-button">Sign Up </Button>
         </div>
         <div class="newsletter-img">
-            <img src="../assets/Newsletter.jpg" alt="" />
+            <img src="../assets/Newsletter.png" alt="" />
         </div>
     </div>
 </template>
@@ -27,7 +27,25 @@ export default {
 .promotion {
     width: 100%;
     padding-inline: var(--padding-inline);
-    padding-block: 15%;
+    padding-block: 30% 40%;
+
+    position: relative;
+}
+
+.promotion::after {
+    content: "";
+    display: inline-block;
+
+    background-color: var(--color-bg);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    top: -15rem;
+    left: 0;
+
+    /* z-index: -10; */
 }
 
 .promo-description {
